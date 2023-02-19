@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="C:\Users\jpedr\Documents\SPTECH\Aula02.css" rel="stylesheet" type="text/css">    
+    <title>Aula02 Aritméticas</title>
+
+</head>
+
+<body background="C:\Users\Aluno\Downloads\fundinho.avif">
+   <h2>Minha Calculadora</h2> 
+
+
+   <table class="x" >
+    <tr class="alternada">
+        <td class="esquerda">Insira um número</td>
+        <td style="width: 150px; text-align: center;"><input id="inputNum" type="text" style="width: 110px;"></td>
+    </tr>           
+    <tr>
+        <td class="esquerda">Multiplicação</td> 
+        <td style="text-align: center;"><button onclick="mutiplicar()">Multiplicar por 5</button></td>
+    </tr>
+    <tr class="alternada">
+        <td class="esquerda">Divisao</td>
+        <td style="text-align: center;"><button onclick="dividir()">Dividir por 5</button>
+    </tr>
+    <tr>
+        <td class="esquerda">Subtração</td>
+        <td style="text-align: center;"><button onclick="subtrair()">Subtrair 5</button>
+    </tr>
+    <tr class="alternada">
+        <td class="esquerda">Soma</td>
+        <td style="text-align: center;"><button onclick="somar()">Somar 5</button>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
+<script>
+    function mutiplicar(){
+        var numero = Number(inputNum.value);
+        alert(inputNum.value + " multiplicado por 5 é: " +  (numero * 5) );
+    }
+    function dividir(){
+        var numero = Number(inputNum.value);
+        alert(inputNum.vaue + " dividido por 5 é: " + (numero / 5) );
+    }
+    
+    function subtrair(){
+        var numero = Number(inputNum.value);
+        alert(inputNum.value + " subtraido por 5 é: " + (numero - 5) );
+    }
+    function somar(){
+        var numero = Number(inputNum.value);
+        alert(inputNum.value + " somado com 5 é: " + (numero + 5) );
+    }
+</script>
